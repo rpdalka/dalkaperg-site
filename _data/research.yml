@@ -1,20 +1,16 @@
 # Research areas. "summary" shows on the home page; "description" shows on
 # the Research page and can use Markdown (links, *italics*, lists).
-- title: Research area one
-  summary: One or two sentences describing this line of work in plain language.
+- title: Interdisciplinary Physics with Life Science Students
+  summary: We are interested in understanding the ways in which life science students identify relevance in the physics they learn. We investigate this through building curricula with students and conducting research to understand how others engage with that curricula.
   description: |
-    A longer description of this research area: the questions you ask, the
-    methods you use, and why it matters for students and instructors.
-    Replace this placeholder with your own text.
+    <need to add description>
 
-- title: Research area two
-  summary: One or two sentences describing this line of work in plain language.
+- title: Undergraduate Teaching Assistants in STEM
+  summary: As part of a larger effort to support a Learning Assistant program at Detroit Mercy, we investigate the ways in which Teaching Assistants collaborate with faculty within their STEM courses.
   description: |
-    A longer description of this research area. You can include links, such as
-    [a related paper](https://example.com), and multiple paragraphs.
+    <need to add description>
 
-- title: Research area three
-  summary: One or two sentences describing this line of work in plain language.
+- title: Group Work in Physics
+  summary: In this project, we are studying the different ways in which students enter into discussions about their conceptual understandings of physics within group work.
   description: |
-    A longer description of this research area. Delete any entry you don't
-    need, or copy one to add more.
+    <need to add description>
