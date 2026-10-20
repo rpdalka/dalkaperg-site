@@ -9,7 +9,7 @@ intro: The students and researchers who make up the group, past and present.
     {% if pi.photo %}<img src="{{ '/assets/img/people/' | append: pi.photo | relative_url }}" alt="">{% else %}{% assign parts = pi.name | split: " " %}<span>{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>{% endif %}
   </div>
   <div>
-    <h2>{% if pi.link %}<a href="{{ pi.link }}">{{ pi.name }}</a>{% else %}{{ pi.name }}{% endif %}</h2>
+    <h2>{% if pi.link %}<a href="{{ pi.link }}" target="_blank" rel="noopener">{{ pi.name }}</a>{% else %}{{ pi.name }}{% endif %}</h2>
     <p class="role">{{ pi.role }}</p>
     {{ pi.bio | markdownify }}
   </div>
@@ -25,7 +25,7 @@ intro: The students and researchers who make up the group, past and present.
         {% if p.photo %}<img src="{{ '/assets/img/people/' | append: p.photo | relative_url }}" alt="">{% else %}{% assign parts = p.name | split: " " %}<span>{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>{% endif %}
       </div>
       <div>
-        <h3>{% if p.link %}<a href="{{ p.link }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
+        <h3>{% if p.link %}<a href="{{ p.link }}" target="_blank" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
         <p class="role">{{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}</p>
         {% if p.bio %}<p>{{ p.bio }}</p>{% endif %}
       </div>
@@ -41,7 +41,7 @@ intro: The students and researchers who make up the group, past and present.
   <ul class="alumni">
     {% for p in site.data.people.alumni %}
     <li>
-      <strong>{% if p.link %}<a href="{{ p.link }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>
+      <strong>{% if p.link %}<a href="{{ p.link }}" target="_blank" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>
       <span class="role">{{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}</span>
       {% if p.now %}<span class="now">{{ p.now }}</span>{% endif %}
     </li>
