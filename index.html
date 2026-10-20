@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <h1>Studying how people learn physics, and how to teach it better.</h1>
+      <p class="lede">We are a physics and STEM education research group led by Robert Dalka at {{ site.institution }}. Replace this sentence with a short description of what the group does and who it works with.</p>
+      <p class="hero-links">
+        <a class="button" href="{{ '/research/' | relative_url }}">Explore our research</a>
+        <a class="text-link" href="{{ '/people/' | relative_url }}">Meet the group</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section">
+  <h2>What we study</h2>
+  <ul class="areas">
+    {% for area in site.data.research %}
+    <li>
+      <h3>{{ area.title }}</h3>
+      <p>{{ area.summary }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  <p><a class="text-link" href="{{ '/research/' | relative_url }}">Read more about our research</a></p>
+</section>
+
+{% if site.data.news and site.data.news.size > 0 %}
+<section class="wrap section">
+  <h2>News</h2>
+  <ul class="news">
+    {% for item in site.data.news limit: 5 %}
+    <li>
+      <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%B %Y' }}</time>
+      <p>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<section class="wrap section join">
+  <h2>Join the group</h2>
+  <p>We welcome undergraduate and graduate students interested in education research, whether or not you've done research before. Email <a href="mailto:{{ site.email }}">{{ site.email }}</a> with a few sentences about yourself and what interests you.</p>
+</section>

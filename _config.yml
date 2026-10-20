@@ -1,0 +1,24 @@
+# Site settings. Edit these first.
+title: Dalka Physics Education Research Group
+short_title: Dalka PERG
+description: A physics and STEM education research group led by Robert Dalka.
+institution: "[Your University]"          # e.g. University of Somewhere
+department: "[Department of Physics]"
+email: "rdalka@example.edu"               # contact address shown on the site
+
+url: "https://dalkaperg.com"
+baseurl: ""
+
+# Top navigation, in order
+nav:
+  - title: Research
+    url: /research/
+  - title: Publications
+    url: /publications/
+  - title: People
+    url: /people/
+
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md

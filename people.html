@@ -1,0 +1,51 @@
+---
+layout: page
+title: People
+intro: The students and researchers who make up the group, past and present.
+---
+{% assign pi = site.data.people.pi %}
+<section class="pi">
+  <div class="avatar avatar-lg">
+    {% if pi.photo %}<img src="{{ '/assets/img/people/' | append: pi.photo | relative_url }}" alt="">{% else %}{% assign parts = pi.name | split: " " %}<span>{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>{% endif %}
+  </div>
+  <div>
+    <h2>{% if pi.link %}<a href="{{ pi.link }}">{{ pi.name }}</a>{% else %}{{ pi.name }}{% endif %}</h2>
+    <p class="role">{{ pi.role }}</p>
+    {{ pi.bio | markdownify }}
+  </div>
+</section>
+
+{% if site.data.people.current.size > 0 %}
+<section class="section-tight">
+  <h2>Current members</h2>
+  <ul class="people">
+    {% for p in site.data.people.current %}
+    <li class="person">
+      <div class="avatar">
+        {% if p.photo %}<img src="{{ '/assets/img/people/' | append: p.photo | relative_url }}" alt="">{% else %}{% assign parts = p.name | split: " " %}<span>{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>{% endif %}
+      </div>
+      <div>
+        <h3>{% if p.link %}<a href="{{ p.link }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
+        <p class="role">{{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}</p>
+        {% if p.bio %}<p>{{ p.bio }}</p>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if site.data.people.alumni.size > 0 %}
+<section class="section-tight">
+  <h2>Alumni</h2>
+  <ul class="alumni">
+    {% for p in site.data.people.alumni %}
+    <li>
+      <strong>{% if p.link %}<a href="{{ p.link }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</strong>
+      <span class="role">{{ p.role }}{% if p.years %}, {{ p.years }}{% endif %}</span>
+      {% if p.now %}<span class="now">{{ p.now }}</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

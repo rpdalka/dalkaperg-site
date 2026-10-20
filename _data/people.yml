@@ -1,0 +1,35 @@
+# People. Only list students who have agreed to be included.
+# "photo" is optional: put the image in assets/img/people/ and write just the
+# file name (e.g. jane-doe.jpg). Without a photo, initials are shown instead.
+# "link" is optional (personal site, LinkedIn, Google Scholar, etc.).
+
+pi:
+  name: Robert Dalka
+  role: Principal investigator
+  photo:
+  bio: |
+    A short bio: your position, background, and the questions that drive the
+    group's work. Replace this placeholder.
+  link:
+
+current:
+  - name: Jane Doe
+    role: PhD student
+    years: 2024 to present
+    photo:
+    bio: Studies something interesting about how students learn physics.
+    link:
+
+  - name: Sam Rivera
+    role: Undergraduate researcher
+    years: 2025 to present
+    photo:
+    bio: Works on survey analysis for the group's course transformation project.
+    link:
+
+alumni:
+  - name: Alex Chen
+    role: Undergraduate researcher
+    years: 2023 to 2025
+    now: Now a graduate student in physics at Example University
+    link:

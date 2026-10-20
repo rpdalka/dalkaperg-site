@@ -1,0 +1,19 @@
+# Publications, any order (the page groups and sorts them by year).
+# "link" is optional (DOI or PDF URL). "note" is optional (e.g. "Best paper").
+- year: 2026
+  authors: Student A., Student B., & Dalka, R.
+  title: Title of a recent paper goes here
+  venue: Physical Review Physics Education Research
+  link: https://doi.org/10.0000/example
+
+- year: 2025
+  authors: Dalka, R., & Collaborator, C.
+  title: Title of a conference proceedings paper
+  venue: Physics Education Research Conference Proceedings
+  link:
+
+- year: 2025
+  authors: Student C., & Dalka, R.
+  title: Title of a talk or poster
+  venue: AAPT Summer Meeting
+  note: Poster

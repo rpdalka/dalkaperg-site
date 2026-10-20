@@ -1,0 +1,20 @@
+# Research areas. "summary" shows on the home page; "description" shows on
+# the Research page and can use Markdown (links, *italics*, lists).
+- title: Research area one
+  summary: One or two sentences describing this line of work in plain language.
+  description: |
+    A longer description of this research area: the questions you ask, the
+    methods you use, and why it matters for students and instructors.
+    Replace this placeholder with your own text.
+
+- title: Research area two
+  summary: One or two sentences describing this line of work in plain language.
+  description: |
+    A longer description of this research area. You can include links, such as
+    [a related paper](https://example.com), and multiple paragraphs.
+
+- title: Research area three
+  summary: One or two sentences describing this line of work in plain language.
+  description: |
+    A longer description of this research area. Delete any entry you don't
+    need, or copy one to add more.
