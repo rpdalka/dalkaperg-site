@@ -2,9 +2,9 @@
 title: Dalka Physics Education Research Group
 short_title: Dalka PERG
 description: A physics and STEM education research group led by Robert Dalka.
-institution: "[Your University]"          # e.g. University of Somewhere
-department: "[Department of Physics]"
-email: "rdalka@example.edu"               # contact address shown on the site
+institution: "University of Detroit Mercy"          # e.g. University of Somewhere
+department: Physics Program, Department of Chemistry & Biochemistry
+email: "dalkarp@udmercy.edu"               # contact address shown on the site
 
 url: "https://dalkaperg.com"
 baseurl: ""
