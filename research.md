@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research
-intro: An overview of the questions we study. Edit the areas in _data/research.yml.
+intro: An overview of the questions we study.
 ---
 
 {% for area in site.data.research %}
