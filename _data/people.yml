@@ -4,32 +4,37 @@
 # "link" is optional (personal site, LinkedIn, Google Scholar, etc.).
 
 pi:
-  name: Robert Dalka
+  name: Rob Dalka
   role: Principal investigator
   photo:
   bio: |
-    A short bio: your position, background, and the questions that drive the
-    group's work. Replace this placeholder.
-  link:
+    Rob is an Assistant Professor of Physics at the University of Detroit Mercy. He began this research group when he joined the university after completing his PhD in Physics at the University of Maryland, College Park. His expertise spans both qualitative and quantitative research methodologies as he brings a focus to the ways in which students have agency in their own physics learning.
+  link: www.robdalka.com
 
 current:
-  - name: Jane Doe
-    role: PhD student
-    years: 2024 to present
+  - name: Khulud Gretlein
+    role: Undergraduate researcher
+    years: 
     photo:
-    bio: Studies something interesting about how students learn physics.
+    bio: <insert>
     link:
 
-  - name: Sam Rivera
+  - name: Nathan Mulligan
     role: Undergraduate researcher
-    years: 2025 to present
+    years: 
     photo:
-    bio: Works on survey analysis for the group's course transformation project.
+    bio: <insert>
     link:
 
 alumni:
-  - name: Alex Chen
+  - name: Melissa Martinez Martinez
     role: Undergraduate researcher
-    years: 2023 to 2025
-    now: Now a graduate student in physics at Example University
+    years: 2026
+    now: <insert>
+    link:
+    
+  - name: Marah Awad
+    role: Undergraduate researcher
+    years: 2025
+    now: <insert>
     link:
