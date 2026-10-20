@@ -11,7 +11,7 @@ intro: Papers, proceedings, and presentations by group members.
     {% for pub in group.items %}
     <li>
       <span class="pub-authors">{{ pub.authors }}</span>
-      {% if pub.link %}<a class="pub-title" href="{{ pub.link }}">{{ pub.title }}</a>{% else %}<span class="pub-title">{{ pub.title }}</span>{% endif %}
+      {% if pub.link %}<a class="pub-title" href="{{ pub.link }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}<span class="pub-title">{{ pub.title }}</span>{% endif %}
       <span class="pub-venue">{{ pub.venue }}{% if pub.note %} ({{ pub.note }}){% endif %}</span>
     </li>
     {% endfor %}
